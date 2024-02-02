@@ -1,0 +1,82 @@
+﻿@model List<CAPA_ENTIDADES_NEGOCIO.CLASES.AmbienteBE>
+@{
+    ViewData["Title"] = "PÁGINA DE INICIO";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/PaginaInicio.css">
+    <title>Cultivo Hidropónico</title>
+</head>
+<body>
+    <div class="Cuerpo">
+        <div class="ContenidoPrincipal">
+            <h1>Variables</h1>
+            <div>
+                <div class="Valores">
+                    <h2>@Model[0].Nombre_Variable_Ambiente</h2>
+                    <div class="Medida">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-thermometer"
+                             width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825"
+                             fill="#ff2825" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M19 5a2.828 2.828 0 0 1 0 4l-8 8h-4v-4l8 -8a2.828 2.828 0 0 1 4 0z" />
+                            <path d="M16 7l-1.5 -1.5" />
+                            <path d="M13 10l-1.5 -1.5" />
+                            <path d="M10 13l-1.5 -1.5" />
+                            <path d="M7 17l-3 3" />
+                        </svg>
+                        <p><span id="Temperatura">@Model[0].Valor_Variable_Ambiente</span> @Model[0].Simbolo_Unidad_Medida</p>
+                    </div>
+                    <p class="SensorUsado">Medido por el sensor @Model[0].Sensor_Ambiente</p>
+                </div>
+            </div>
+            <div>
+                <div class="Valores">
+                    <h2>@Model[1].Nombre_Variable_Ambiente</h2>
+                    <div class="Medida">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-droplet"
+                             width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb"
+                             fill="#00abfb" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M6.8 11a6 6 0 1 0 10.396 0l-5.197 -8l-5.2 8z" />
+                        </svg>
+                        <p><span id="Humedad">@Model[1].Valor_Variable_Ambiente </span> @Model[1].Simbolo_Unidad_Medida</p>
+                    </div>
+                    <p class="SensorUsado">Medido por el sensor @Model[1].Sensor_Ambiente</p>
+                </div>
+            </div>
+            <div>
+                <div class="Valores">
+                    <h2>@Model[2].Nombre_Variable_Ambiente</h2>
+                    <div class="Medida">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bolt" width="40"
+                             height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="#ffec00"
+                             stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3" />
+                        </svg>
+                        <p><span id="Conductividad">@Model[2].Valor_Variable_Ambiente </span>  @Model[2].Simbolo_Unidad_Medida</p>
+                    </div>
+                    <p class="SensorUsado">Medido por el sensor @Model[2].Sensor_Ambiente</p>
+                </div>
+            </div>
+            <div class="Intervalo">
+                <div class="Segundos">
+                    <p>INTERVALO DE REFRESCO:</p>
+                    <input type="number" min="1" max="10" value="5" class="InputIntervalo" id="InputIntervalo"/>
+                    <p>SEGUNDOS</p>
+                </div>
+                <button onclick="updateRefreshRate()" class="BtnIntervalo">Actualizar tasa de refresco</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="~/js/Ambiente.js"></script>
+</body>
+</html>

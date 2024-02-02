@@ -1,0 +1,162 @@
+﻿:root {
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --fuentePrincipal: 'Righteous', cursive;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.Principal {
+    flex: 1;
+    background-color: var(--ColorPrincipal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contenido {
+    flex-direction: column;
+    background: #A09D44;
+    background: -webkit-linear-gradient(to bottom, #323709, #A09D44);
+    background: linear-gradient(to bottom, #323709, #A09D44);
+    margin: 0;
+    height: 85%;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+label{
+    color: var(--blanco);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+input, select {
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0 2rem;
+    border-radius: 10px;
+    height: 4rem;
+    border: none;
+}
+
+input, #VariableSensor {
+    width: 20rem;
+}
+
+#UnidadesSensor {
+    width: 30rem;
+}
+
+input[type="text"]{
+    text-indent: 1.2rem;
+}
+
+select {
+    text-align: center;
+}
+
+.Atributo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.Eliminar form {
+    width: 90%;
+}
+
+.BtnEliminar {
+    padding: 1rem 0;
+    background-color: #FF0000;
+    color: var(--blanco);
+    align-content: center;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+}
+
+.BtnGuardar {
+    background-color: #00FF04;
+    border: none;
+    cursor: pointer;
+    padding: .7rem 0;
+}
+
+.Eliminar{
+    width: 95%;
+    margin: 4rem 0;
+}
+
+#NombreSensor{
+    width: 25rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--blanco);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+a:hover {
+    font-size: 2.5rem;
+    color: #03e9f4;
+}
+
+#FormularioOculto {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 45rem;
+    height: 45rem;
+    background-color: #03e9f4;
+    border: 5px solid var(--negro);
+    z-index: 5;
+    border-radius: 1.5rem;
+}
+
+.FormuOculto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%
+}
+
+.InputTextoUnidadMedida, .InputBotonUnidadMedida {
+    width: 90%;
+    margin: 1.5rem;
+    text-align:center;
+}
+
+#CerrarFormularioOculto{
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 2rem;
+    border-radius: 1.5rem;
+    border: none;
+    padding: 1rem 0;
+    width: 90%;
+    background-color: red;
+    color: var(--blanco);
+}

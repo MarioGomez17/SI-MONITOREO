@@ -1,0 +1,345 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\APLICACION_CULTIVO_HIDROPONICO.bundle.scp.css",
+      "PackagePath": "staticwebassets\\APLICACION_CULTIVO_HIDROPONICO.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\css\\AgregarPlanta.css",
+      "PackagePath": "staticwebassets\\css\\AgregarPlanta.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\css\\AgregarSensor.css",
+      "PackagePath": "staticwebassets\\css\\AgregarSensor.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\css\\GenerarReporte.css",
+      "PackagePath": "staticwebassets\\css\\GenerarReporte.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\css\\IniciarSesion.css",
+      "PackagePath": "staticwebassets\\css\\IniciarSesion.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\css\\PaginaInicio.css",
+      "PackagePath": "staticwebassets\\css\\PaginaInicio.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\css\\RegistrarUsuario.css",
+      "PackagePath": "staticwebassets\\css\\RegistrarUsuario.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\css\\VerPlanta.css",
+      "PackagePath": "staticwebassets\\css\\VerPlanta.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\css\\VerPlantas.css",
+      "PackagePath": "staticwebassets\\css\\VerPlantas.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\css\\VerSensor.css",
+      "PackagePath": "staticwebassets\\css\\VerSensor.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\css\\VerSensores.css",
+      "PackagePath": "staticwebassets\\css\\VerSensores.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\css\\VerUsuario.css",
+      "PackagePath": "staticwebassets\\css\\VerUsuario.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\css\\VerUsuarios.css",
+      "PackagePath": "staticwebassets\\css\\VerUsuarios.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\images\\planti.jpg",
+      "PackagePath": "staticwebassets\\images\\planti.jpg"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\js\\AgregarPlanta.js",
+      "PackagePath": "staticwebassets\\js\\AgregarPlanta.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\js\\Ambiente.js",
+      "PackagePath": "staticwebassets\\js\\Ambiente.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\js\\VerPlanta.js",
+      "PackagePath": "staticwebassets\\js\\VerPlanta.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\js\\VerPlantas.js",
+      "PackagePath": "staticwebassets\\js\\VerPlantas.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\js\\VerSensor.js",
+      "PackagePath": "staticwebassets\\js\\VerSensor.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\js\\VerUsuario.js",
+      "PackagePath": "staticwebassets\\js\\VerUsuario.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\js\\VerUsuarios.js",
+      "PackagePath": "staticwebassets\\js\\VerUsuarios.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\UNIVERSIDAD\\CONSTRUCCION\\PROYECTO CH\\APLICACION_CULTIVO_HIDROPONICO\\APLICACION_CULTIVO_HIDROPONICO\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.APLICACION_CULTIVO_HIDROPONICO.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.APLICACION_CULTIVO_HIDROPONICO.props",
+      "PackagePath": "build\\APLICACION_CULTIVO_HIDROPONICO.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.APLICACION_CULTIVO_HIDROPONICO.props",
+      "PackagePath": "buildMultiTargeting\\APLICACION_CULTIVO_HIDROPONICO.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.APLICACION_CULTIVO_HIDROPONICO.props",
+      "PackagePath": "buildTransitive\\APLICACION_CULTIVO_HIDROPONICO.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,235 @@
+﻿@model CAPA_ENTIDADES_NEGOCIO.CLASES.PlantaBE_TipoPlantaBE_UnidadMedidaPlantaBE_UnidadTiempoPlantaBE_AmbienteBE
+@{
+    ViewData["Title"] = "PLANTA " + Model.Planta.Nombre_Planta;
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/VerPlanta.css">
+    <title>Planta</title>
+</head>
+<body>
+    <div class="Contenedor">
+        <div class="Izquierda">
+            <div class="InformacionPlanta">
+                <div class="TituloPlanta">
+                    <h1>Información Planta</h1>
+                </div>
+                <div class="Atributo">
+                    <div class="Formulario">
+                        <div class="Etiqueta">
+                            <label for="NombrePlanta">Nombre Planta</label>
+                        </div>
+                        <form asp-controller="Planta" asp-action="CambiarNombrePlanta" method="post">
+                            <input type="hidden" value="@Model.Planta.Id_Planta" name="IdPlanta" />
+                            <div class="Campos">
+                                <input type="text" value="@Model.Planta.Nombre_Planta" name="NombrePlanta" id="NombrePlanta" />
+                                <input id="BtnGuardarNombrePlanta" class="Guardar" type="submit" value="Guardar" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="Atributo">
+                    <div class="Formulario">
+                        <div class="Etiqueta">
+                            <label for="TipoPlanta">Tipo Planta</label>
+                        </div>
+                        <form asp-controller="Planta" asp-action="CambiarTipoPlanta" method="post">
+                            <input type="hidden" value="@Model.Planta.Id_Planta" name="IdPlanta" />
+                            <div class="Campos">
+                                <select name="TipoPlanta" id="TipoPlanta">
+                                    @foreach (var Tipo in Model.Tipos)
+                                    {
+                                        @if (Model.Planta.Tipo_Planta_Planta == Tipo.Nombre_Tipo_Planta)
+                                        {
+                                            <option value="@Tipo.Id_Tipo_Planta" selected>@Tipo.Nombre_Tipo_Planta</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@Tipo.Id_Tipo_Planta">@Tipo.Nombre_Tipo_Planta</option>
+                                        }
+                                    }
+                                </select>
+                                <input id="BtnGuardarTipoPlanta" class="Guardar" type="submit" value="Guardar" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="Atributo">
+                    <div class="Formulario">
+                        <div class="Etiqueta">
+                            <label for="DiametroTalloPlanta">Diametro del Tallo</label>
+                        </div>
+                        <form asp-controller="Planta" asp-action="CambiarDiametroTalloPlanta" method="post">
+                            <input type="hidden" value="@Model.Planta.Id_Planta" name="IdPlanta" />
+                            <div class="Campos">
+                                <input type="text" id="DiametroTalloPlanta" value="@Model.Planta.Diametro_Tallo_Planta" name="DiametroTalloPlanta" />
+                                <select name="UnidadMedidaPlanta" id="UnidadMedidaPlanta">
+                                    @foreach (var UnidadesM in Model.UnidadesM)
+                                    {
+                                        @if (Model.Planta.Unidad_Medida_Planta_Planta == UnidadesM.Simbolo_Unidad_Medida_Planta)
+                                        {
+                                            <option value="@UnidadesM.Id_Unidad_Medida_Planta" selected>@UnidadesM.Nombre_Unidad_Medida_Planta</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@UnidadesM.Id_Unidad_Medida_Planta">@UnidadesM.Nombre_Unidad_Medida_Planta</option>
+                                        }
+                                    }
+                                </select>
+                                <input id="BtnGuardarDiametroTalloPlanta" class="Guardar" type="submit" value="Guardar" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="Atributo">
+                    <div class="Formulario">
+                        <div class="Etiqueta">
+                            <label for="TiempoCultivoPlanta">Tiempo de Cultivo</label>
+                        </div>
+                        <form asp-controller="Planta" asp-action="CambiarTiempoCultivoPlanta" method="post">
+                            <input type="hidden" value="@Model.Planta.Id_Planta" name="IdPlanta" />
+                            <div class="Campos">
+                                <input type="text" id="TiempoCultivoPlanta" value="@Model.Planta.Tiempo_Cultivo_Planta" name="TiempoCultivoPlanta" />
+                                <select name="UnidadTiempoPlanta" id="UnidadTiempoPlanta">
+                                    @foreach (var UnidadesT in Model.UnidadesT)
+                                    {
+                                        @if (Model.Planta.Unidad_Tiempo_Planta_Planta == UnidadesT.Nombre_Unidad_Tiempo_Planta)
+                                        {
+                                            <option value="@UnidadesT.Id_Unidad_Ttimepo_Planta" selected>@UnidadesT.Nombre_Unidad_Tiempo_Planta</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@UnidadesT.Id_Unidad_Ttimepo_Planta">@UnidadesT.Nombre_Unidad_Tiempo_Planta</option>
+
+                                        }
+                                    }
+                                </select>
+                                <input id="BtnGuardarTiempoCultivoPlanta" class="Guardar" type="submit" value="Guardar" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="Atributo">
+                    <div class="Formulario">
+                        <div class="Etiqueta">
+                            <label for="CantidadHojasPlanta">Cantidad de Hojas</label>
+                        </div>
+                        <form asp-controller="Planta" asp-action="CambiarCantidadHojasPlanta" method="post">
+                            <input type="hidden" value="@Model.Planta.Id_Planta" name="IdPlanta" />
+                            <div class="Campos">
+                                <input type="text" id="CantidadHojasPlanta" value="@Model.Planta.Cantidad_Hojas_Planta" name="CantidadHojasPlanta" />
+                                <input id="BtnGuardarCantidadHojasPlanta" class="Guardar" type="submit" value="Guardar" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="Atributo">
+                    <div class="Formulario">
+                        <div class="Etiqueta">
+                            <label for="AlturaPlanta">Altura</label>
+                        </div>
+                        <form asp-controller="Planta" asp-action="CapturarAlturaPlanta" method="post">
+                            <input type="hidden" value="@Model.Planta.Id_Planta" name="IdPlanta" />
+                            <div class="Campos">
+                                <input type="text" id="AlturaPlanta" value="@Model.Planta.Altura_Planta cm" name="AlturaPlanta" readonly/>
+                                <input id="BtnGuardarAlturaPlanta" class="Guardar" type="submit" value="Capturar Altura" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="Atributo BotonEliminar">
+                    <div class="Formulario">
+                        <form asp-controller="Planta" asp-action="EliminarPlanta" method="post">
+                            <input type="hidden" value="@Model.Planta.Id_Planta" name="IdPlanta" />
+                            <div class="FormBoton">
+                                <input type="submit" class="Eliminar" value="Eliminar" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                @if (Model.RolUsuarioEnSesion == "Administrador")
+                {
+                    <div class="Atributo">
+                        <a asp-controller="Planta" asp-action="AgregarUnidadMedidaPlanta" id="AgregarUnidadMedidaPlanta">Agregar Unidad de Medida para Planta</a>
+                        <a asp-controller="Planta" asp-action="AgregarUnidadTiempoPlanta" id="AgregarUnidadTiempoPlanta">Agregar Unidad de Tiempo para Planta</a>
+                    </div>
+                    <div id="FormularioOcultoMedida">
+                        <form class="FormuOculto" asp-controller="Planta" asp-action="AgregarUnidadMedidaPlanta" method="post">
+                            <input type="hidden" value="@Model.Planta.Id_Planta" name="IdPlanta" />
+                            <input type="text" class="InputTextoUnidadMedida" placeholder="Ingrese el nombre de la Unidad" name="UnidadMedida" />
+                            <input type="text" class="InputTextoUnidadMedida" placeholder="Ingrese el símbolo de la Unidad" name="SimboloUnidad" />
+                            <input type="submit" class="InputBotonUnidadMedida" value="Crear unidad de Medida" />
+                        </form>
+                        <button id="CerrarFormularioOcultoMedida">Cerrar</button>
+                    </div>
+                    <div id="FormularioOcultoTiempo">
+                        <form class="FormuOculto" asp-controller="Planta" asp-action="AgregarUnidadTiempoPlanta" method="post">
+                            <input type="hidden" value="@Model.Planta.Id_Planta" name="IdPlanta" />
+                            <input type="text" class="InputTextoUnidadMedida" placeholder="Ingrese el nombre de la Unidad" name="UnidadTiempo" />
+                            <input type="submit" class="InputBotonUnidadMedida" value="Crear unidad de Medida" />
+                        </form>
+                        <button id="CerrarFormularioOcultoTiempo">Cerrar</button>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="Derecha">
+            <div class="InformacionAmbiente">
+                <div class="ContenidoPrincipal">
+                    <h2>Variables</h2>
+                    <div class="Valores">
+                        <div class="Medida">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-thermometer"
+                                 width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825"
+                                 fill="#ff2825" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M19 5a2.828 2.828 0 0 1 0 4l-8 8h-4v-4l8 -8a2.828 2.828 0 0 1 4 0z" />
+                                <path d="M16 7l-1.5 -1.5" />
+                                <path d="M13 10l-1.5 -1.5" />
+                                <path d="M10 13l-1.5 -1.5" />
+                                <path d="M7 17l-3 3" />
+                            </svg>
+                            <p><span id="Temperatura" class="Letrero">@Model.AmbienteBE[0].Valor_Variable_Ambiente</span> @Model.AmbienteBE[0].Simbolo_Unidad_Medida</p>
+                        </div>
+                    </div>
+                    <div class="Valores">
+                        <div class="Medida">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-droplet"
+                                 width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb"
+                                 fill="#00abfb" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M6.8 11a6 6 0 1 0 10.396 0l-5.197 -8l-5.2 8z" />
+                            </svg>
+                            <p><span class="Letrero" id="Humedad">@Model.AmbienteBE[1].Valor_Variable_Ambiente </span> @Model.AmbienteBE[1].Simbolo_Unidad_Medida</p>
+                        </div>
+                    </div>
+                    <div class="Valores">
+                        <div class="Medida">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bolt" width="40"
+                                 height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="#ffec00"
+                                 stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3" />
+                            </svg>
+                            <p><span class="Letrero" id="Conductividad">@Model.AmbienteBE[2].Valor_Variable_Ambiente </span>  @Model.AmbienteBE[2].Simbolo_Unidad_Medida</p>
+                        </div>
+                    </div>
+                    <div class="Intervalo">
+                        <div class="Segundos">
+                            <p>INTERVALO DE REFRESCO:</p>
+                            <input type="number" min="1" max="10" value="5" class="InputIntervalo" id="InputIntervalo" />
+                            <p>SEGUNDOS</p>
+                        </div>
+                        <button onclick="updateRefreshRate()" class="BtnIntervalo">Actualizar tasa de refresco</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/VerPlanta.js"></script>
+    <script src="~/js/Ambiente.js"></script>
+</body>
+</html>

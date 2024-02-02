@@ -1,0 +1,46 @@
+﻿@model CAPA_ENTIDADES_NEGOCIO.CLASES.ReporteBE_AmbienteBE
+@{
+    ViewData["Title"] = "REPORTE";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/GenerarReporte.css">
+    <title>Reporte</title>
+</head>
+<body>
+    <div class="Contenedor">
+        <div class="ContenedorReportes">
+            <div class="TituloReporte">
+                <h1>Reporte</h1>
+            </div>
+            @foreach (var Reporte in Model.Reportes)
+            {
+                <div class="Reporte">
+                    <div class="Variable">
+                        <h2>Temperatura</h2>
+                        <span>@Reporte.Temperatura_Reporte @Model.Ambiente[0].Simbolo_Unidad_Medida</span>
+                    </div>
+                    <div class="Variable">
+                        <h2>Humedad</h2>
+                        <span>@Reporte.Humedad_Reporte @Model.Ambiente[1].Simbolo_Unidad_Medida</span>
+                    </div>
+                    <div class="Variable">
+                        <h2>Conductividad</h2>
+                        <span>@Reporte.Conductividad_Reporte @Model.Ambiente[2].Simbolo_Unidad_Medida</span>
+                    </div>
+                    <div class="Variable">
+                        <h2>Fecha</h2>
+                        <span>@Reporte.Fecha_Reporte</span>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>

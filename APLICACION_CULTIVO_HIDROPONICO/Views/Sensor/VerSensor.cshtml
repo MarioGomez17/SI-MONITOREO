@@ -1,0 +1,98 @@
+﻿@model CAPA_ENTIDADES_NEGOCIO.CLASES.SensorBE_VariableBE_UnidadMedidaSensorBE
+@{
+    ViewData["Title"] = "SENSOR " + @Model.Sensor.Nombre_Sensor;
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/VerSensor.css">
+    <title>Sensor</title>
+</head>
+<body>
+    <div class="Contenido">
+        <h1>Información Sensor</h1>
+        <div class="Atributo">
+            <label for="NombreSensor">Nombre Sensor</label>
+            <form asp-controller="Sensor" asp-action="CambiarNombreSensor" method="post">
+                <input type="hidden" value="@Model.Sensor.Id_Sensor" name="IdSensor" />
+                <input type="text" value="@Model.Sensor.Nombre_Sensor" name="NombreSensor" id="NombreSensor" />
+                <input id="BtnGuardarNombreSensor" type="submit" class="BtnGuardar" value="Guardar" />
+            </form>
+        </div>
+        <div class="Atributo">
+            <label for="VariableSensor">Variable Sensor</label>
+            <form asp-controller="Sensor" asp-action="CambiarVariableSensor" method="post">
+                <input type="hidden" value="@Model.Sensor.Id_Sensor" name="IdSensor" />
+                <select id="VariableSensor" name="VariableSensor">
+                    @foreach (var Variable in Model.Variables)
+                    {
+                        @if (Model.Sensor.Variable_Sensor == Variable.Nombre_Variable)
+                        {
+                            <option value="@Variable.Id_Variable" selected>@Variable.Nombre_Variable</option>
+                        }
+                        else
+                        {
+                            <option value="@Variable.Id_Variable">@Variable.Nombre_Variable</option>
+                        }
+                    }
+                </select>
+                <select id="UnidadesSensor" name="UnidadesSensor">
+                    @foreach (var Unidad in Model.Unidades)
+                    {
+                        @if (Model.Sensor.Unidad_Medida_Sensor == Unidad.Nombre_unidad)
+                        {
+                            <option value="@Unidad.Id_unidad" selected>@Unidad.Nombre_unidad (@Unidad.Simbolo_Unidad)</option>
+                        }
+                        else
+                        {
+                            <option value="@Unidad.Id_unidad">@Unidad.Nombre_unidad (@Unidad.Simbolo_Unidad)</option>
+                        }
+                    }
+                </select>
+                <input id="BtnGuardarVariables" type="submit" value="Guardar" class="BtnGuardar" />
+            </form>
+        </div>
+        <div class="Atributo">
+            <label for="RangoInferiorSensor">Rango Inferior Sensor</label>
+            <form asp-controller="Sensor" asp-action="CambiarRangoInferiorSensor" method="post">
+                <input type="hidden" value="@Model.Sensor.Id_Sensor" name="IdSensor" />
+                <input id="RangoInferiorSensor" name="RangoInferior" type="text" value="@Model.Sensor.Rango_Inferior_Sensor" />
+                <input id="BtnGuardarRangoInferior" type="submit" value="Guardar" class="BtnGuardar" />
+            </form>
+        </div>
+        <div class="Atributo">
+            <label for="RangoSuperiorSensor">Rango Superior Sensor</label>
+            <form asp-controller="Sensor" asp-action="CambiarRangoSuperiorSensor" method="post">
+                <input type="hidden" value="@Model.Sensor.Id_Sensor" name="IdSensor" />
+                <input id="RangoSuperiorSensor" name="RangoSuperior" type="text" value="@Model.Sensor.Rango_Superior_Sensor" />
+                <input id="BtnGuardarRangoSuperior" type="submit" value="Guardar" class="BtnGuardar" />
+            </form>
+        </div>
+        <div class="Atributo Eliminar">
+            <form asp-controller="Sensor" asp-action="EliminarSensor" method="post">
+                <input type="hidden" value="@Model.Sensor.Id_Sensor" name="IdSensor" />
+                <input type="submit" value="Eliminar" class="BtnEliminar" />
+            </form>
+        </div>
+       @if(Model.RolUsuarioEnSesion == "Administrador"){
+            <div class="Atributo">
+                <a id="AgregarUnidadMedidaSensor">Agregar Unidad de Medida para el Sensor</a>
+            </div>
+            <div id="FormularioOculto">
+                <form class="FormuOculto" asp-controller="Sensor" asp-action="AgregarUnidadMedidaSensor" method="post">
+                    <input type="hidden" value="@Model.Sensor.Id_Sensor" name="IdSensor" />
+                    <input type="text" class="InputTextoUnidadMedida" placeholder="Ingrese el nombre de la Unidad" name="UnidadMedida" />
+                    <input type="text" class="InputTextoUnidadMedida" placeholder="Ingrese el símbolo de la Unidad" name="SimboloUnidad" />
+                    <input type="submit" class="InputBotonUnidadMedida" value="Crear unidad de Medida" />
+                </form>
+                <button id="CerrarFormularioOculto">Cerrar</button>
+            </div>
+        }
+        <script src="~/js/VerSensor.js"></script>
+    </div>
+</body>
+</html>

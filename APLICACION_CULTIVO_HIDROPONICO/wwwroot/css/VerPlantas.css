@@ -1,0 +1,201 @@
+﻿:root {
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --fuentePrincipal: 'Righteous', cursive;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.Contenedor {
+    flex: 1;
+    flex-direction: column;
+    background: #44A08D;
+    background: -webkit-linear-gradient(to bottom, #093637, #44A08D);
+    background: linear-gradient(to bottom, #093637, #44A08D);
+    margin: 0;
+    height: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Carrusel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Objeto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    background-color: #00FF13;
+    padding: 0;
+    transition: 0.3s;
+    top: 0;
+    border-radius: 10px;
+}
+
+span {
+    color: var(--negro);
+}
+
+.Variable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+select {
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 80%;
+    text-indent: 1rem;
+}
+
+.Medida p, .Medida p span {
+    font-size: 3rem;
+}
+
+.Oculto {
+    display: none;
+}
+
+.Valores svg {
+    height: 100px;
+    width: 100px;
+}
+
+.Valores p, .Valores span {
+    font-size: 5rem;
+}
+
+.ContenidoPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.Planta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Botones {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+#PlantaPrevia, #PlantaPosterior {
+    background-color: transparent;
+    border: none;
+    left: 400px;
+    cursor: pointer;
+    margin: 2rem 5rem;
+}
+
+h2 {
+    color: var(--negro);
+    font-size: 3rem;
+    text-align: center
+}
+
+p {
+    font-size: 2rem;
+}
+
+.RegistarPlanta {
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: var(--blanco);
+    text-decoration: none;
+    transition: .5s;
+}
+
+    .RegistarPlanta:hover {
+        color: #03e9f4;
+        font-size: 3.5rem;
+    }
+
+h2, p {
+    margin: 0;
+}
+
+.Valor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Intervalo p {
+    font-size: 2rem;
+}
+
+.Intervalo, .Segundos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BtnIntervalo {
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    margin: 1rem 0;
+}
+
+.InputIntervalo {
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    text-align: center;
+    width: 5rem;
+    margin: 0 2rem;
+    border-radius: 1rem;
+}
+
+.BtnIntervalo {
+    text-transform: uppercase;
+    border-radius: 3.5rem;
+    border: none;
+    margin: 1rem 0;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #445471;
+    color: var(--blanco);
+    transition: .5s;
+}
+
+    .BtnIntervalo:hover, .BtnIntervalo:focus {
+        background-color: #03e9f4;
+        color: var(--negro);
+        font-size: 2.2rem;
+        border: var(--negro) .3rem solid;
+    }

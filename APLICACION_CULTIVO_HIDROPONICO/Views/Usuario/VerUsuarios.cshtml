@@ -1,0 +1,105 @@
+﻿@model CAPA_ENTIDADES_NEGOCIO.CLASES.UsuarioBE_RolBE
+@{
+    ViewData["Title"] = "VER USUARIOS";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/VerUsuarios.css">
+    <title>Usuarios</title>
+</head>
+<body>
+    <div class="Contenedor">
+        <div class="Carrusel">
+            @foreach (var Usuario in Model.Usuarios)
+            {
+                <div class="Objeto">
+                    <div class="Usuario">
+                        <form asp-controller="Usuario" asp-action="CambiarNombreUsuario">
+                            <input type="hidden" value="@Usuario.Id_Usuario" name="IdUsuario" />
+                            <label for="NombreUsuario">Nombre</label>
+                            <div class="InputsInfo">
+                                <input type="text" id="NombreUsuario" value="@Usuario.Nombre_Usuario" name="NombreUsuario" />
+                                <input id="BtnGuardarNombreUsuario" type="submit" class="BtnGuardar" value="Guardar" />
+                            </div>
+                        </form>
+                        <form asp-controller="Usuario" asp-action="CambiarApellidoUsuario">
+                            <input type="hidden" value="@Usuario.Id_Usuario" name="IdUsuario" />
+                            <label for="ApellidoUsuario">Apellido</label>
+                            <div class="InputsInfo">
+                                <input type="text" id="ApellidoUsuario" value="@Usuario.Apellido_Usuario" name="ApellidoUsuario" />
+                                <input id="BtnGuardarApeliidoUsuario" type="submit" class="BtnGuardar" value="Guardar" />
+                            </div>
+                        </form>
+                        <form asp-controller="Usuario" asp-action="CambiarTelefonoUsuario">
+                            <input type="hidden" value="@Usuario.Id_Usuario" name="IdUsuario" />
+                            <label for="TelefonoUsuario">Teléfono</label>
+                            <div class="InputsInfo">
+                                <input type="text" id="TelefonoUsuario" value="@Usuario.Telefono_Usuario" name="TelefonoUsuario" />
+                                <input id="BtnGuardarTelefonoUsuario" type="submit" class="BtnGuardar" value="Guardar" />
+                            </div>
+                        </form>
+                        <form>
+                            <label for="CorreoUsuario">Correo</label>
+                            <input type="email" id="CorreoUsuario" value="@Usuario.Correo_Usuario" readonly />
+                        </form>
+                        <form asp-controller="Usuario" asp-action="CambiarRolUsuario">
+                            <input type="hidden" value="@Usuario.Id_Usuario" name="IdUsuario" />
+                            <label for="RolUsuario">Rol</label>
+                            <div class="InputsInfo">
+                                <select id="RolUsuario" name="IdRol">
+                                    @foreach (var Rol in Model.Roles)
+                                    {
+                                        @if (Usuario.Rol_Usuario == Rol.Nombre_Rol)
+                                        {
+                                            <option value="@Rol.Id_Rol" selected>@Rol.Nombre_Rol</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@Rol.Id_Rol">@Rol.Nombre_Rol</option>
+                                        }
+                                    }
+                                </select>
+                                <input id="BtnGuardarRolUsuario" type="submit" class="BtnGuardar" value="Guardar" />
+                            </div>
+                        </form>
+                        <form>
+                            <label for="EstadoUsuario">Estado</label>
+                            <input type="text" id="EstadoUsuario" value="@Usuario.Estado_Usuario" readonly />
+                        </form>
+                        <form asp-controller="Usuario" asp-action="EliminarUsuario" class="FormEliminar">
+                            <input type="hidden" value="@Usuario.Id_Usuario" name="IdUsuario" />
+                            <input id="BtnEliminarUsuario" type="submit" class="BtnEliminar" value="Eliminar Usuario" />
+                        </form>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="Botones">
+            <button id="UsuarioPrevio">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="65"
+                     height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#03e9f4" fill="#03e9f4"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+                </svg>
+            </button>
+            <a class="AgregarUsuario" asp-controller="Usuario" asp-action="RegistrarUsuario">Registrar Usuario</a>
+            <button id="UsuarioPosterior">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="65"
+                     height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#03e9f4" fill="#03e9f4"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="~/js/VerUsuarios.js"></script>
+</body>
+</html>

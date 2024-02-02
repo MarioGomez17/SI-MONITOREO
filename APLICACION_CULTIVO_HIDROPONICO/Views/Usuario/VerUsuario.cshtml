@@ -1,0 +1,103 @@
+﻿@model CAPA_ENTIDADES_NEGOCIO.CLASES.UsuarioBE
+@{
+    ViewData["Title"] = "VER USUARIO";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/VerUsuario.css">
+    <title>Usuario</title>
+</head>
+<body>
+    <div class="Contenido">
+        <div class="TituloUsuario">
+            <h1>Información Usuario</h1>
+        </div>
+        <div class="Atributo">
+            <div class="Formulario">
+                <div class="Etiqueta">
+                    <label for="NombreUsuario">Nombre</label>
+                </div>
+                <form asp-controller="Usuario" asp-action="CambiarNombreUsuario" method="post">
+                    <input type="hidden" value="@Model.Id_Usuario" name="IdUsuario" />
+                    <input type="text" value="@Model.Nombre_Usuario" name="NombreUsuario" id="NombreUsuario" />
+                    <input id="BtnGuardarNombreUsuario" type="submit" value="Guardar" />
+                </form>
+            </div>
+        </div>
+        <div class="Atributo">
+            <div class="Formulario">
+                <div class="Etiqueta">
+                    <label for="ApellidoUsuario">Apellido</label>
+                </div>
+                <form asp-controller="Usuario" asp-action="CambiarApellidoUsuario" method="post">
+                    <input type="hidden" value="@Model.Id_Usuario" name="IdUsuario" />
+                    <input type="text" id="ApellidoUsuario" value="@Model.Apellido_Usuario" name="ApellidoUsuario" />
+                    <input id="BtnGuardarApellidoUsuario" type="submit" value="Guardar" />
+                </form>
+            </div>
+        </div>
+        <div class="Atributo">
+            <div class="Formulario">
+                <div class="Etiqueta">
+                    <label for="TelefonoUsuario">Teléfono</label>
+                </div>
+                <form asp-controller="Usuario" asp-action="CambiarTelefonoUsuario" method="post">
+                    <input type="hidden" value="@Model.Id_Usuario" name="IdUsuario" />
+                    <input type="text" id="TelefonoUsuario" value="@Model.Telefono_Usuario" name="TelefonoUsuario" />
+                    <input id="BtnGuardarTelefonoUsuario" type="submit" value="Guardar" />
+                </form>
+            </div>
+        </div>
+        <div class="Atributo">
+            <div class="Formulario">
+                <div class="Etiqueta">
+                    <label for="CorreoUsuario">Correo</label>
+                </div>
+                <input type="text" id="CorreoUsuario" value="@Model.Correo_Usuario" name="CorreoUsuario" readonly />
+            </div>
+        </div>
+        <div class="Atributo">
+            <div class="Formulario">
+                <div class="Etiqueta">
+                    <label for="ContrasenaUsuario">Contraseña</label>
+                </div>
+                <form asp-controller="Usuario" asp-action="CambiarContrasenaUsuario" method="post">
+                    <input type="hidden" value="@Model.Id_Usuario" name="IdUsuario" />
+                    <div class="Contrasenas">
+                        <input placeholder="Constraseña Actual" type="password" id="ContrasenaUsuario" name="ContrasenaUsuario" />
+                        <input type="password" id="ContrasenaNuevaUsuario" name="ContrasenaNuevaUsuario" placeholder="Nueva Contraseña" />
+                    </div>
+                    <div class="Contrasenas">
+                        <input type="password" id="ConfContrasenaNuevaUsuario" name="ConfContrasenaNuevaUsuario" placeholder="Confirmar Contraseña" />
+                        <input id="BtnGuardarContrasenaUsuario" type="submit" value="Cambiar Contraseña" disabled />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="Atributo Eliminar">
+            <div class="Formulario Eliminar">
+                <form asp-controller="Usuario" asp-action="EliminarUsuario" method="post">
+                    <input type="hidden" value="@Model.Id_Usuario" name="IdUsuario" />
+                    <input type="submit" value="Eliminar" id="EliminarUsuario" />
+                </form>
+            </div>
+        </div>
+        
+        <a class="GenerarReporte" asp-controller="Usuario" asp-action="GenerarReporte">Generar Reporte</a>
+
+        @if (Model.Rol_Usuario == "Administrador")
+        {
+            <div class="Atributo">
+                <a class="VerUsuarios" asp-controller="Usuario" asp-action="VerUsuarios">Ver Usuarios</a>
+            </div>
+        }
+        
+    </div>
+    <script src="~/js/VerUsuario.js"></script>
+</body>
+</html>

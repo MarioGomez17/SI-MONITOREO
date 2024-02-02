@@ -1,0 +1,50 @@
+﻿@model List<CAPA_ENTIDADES_NEGOCIO.CLASES.SensorBE>
+@{
+    ViewData["Title"] = "VER SENSORES";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/VerSensores.css">
+    <title>Sensores</title>
+</head>
+<body>
+    <div class="Contenedor">
+        <div class="Carrusel">
+            @foreach (var Sensor in Model)
+            {
+                <div class="Objeto">
+                    <h2>@Html.ActionLink(Sensor.Nombre_Sensor, "VerSensor", new { IdSensor = Sensor.Id_Sensor })</h2>
+                    <p>Variable Medida: @Sensor.Variable_Sensor</p>
+                    <p>Unidad de Medida: @Sensor.Unidad_Medida_Sensor (@Sensor.Simbolo_Unidad_Medida_Sensor)</p>
+                    <p>Rango Inferior: @Sensor.Rango_Inferior_Sensor @Sensor.Simbolo_Unidad_Medida_Sensor</p>
+                    <p>Rango Superior: @Sensor.Rango_Superior_Sensor @Sensor.Simbolo_Unidad_Medida_Sensor</p>
+                </div>
+            }
+        </div>
+        <div class="Botones">
+            <button id="SensorPrevio">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="65"
+                     height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#03e9f4" fill="#03e9f4"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+                </svg>
+            </button>
+            <button id="SensorPosterior">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="65"
+                     height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#03e9f4" fill="#03e9f4"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="~/js/VerSensores.js"></script>
+</body>
+</html>

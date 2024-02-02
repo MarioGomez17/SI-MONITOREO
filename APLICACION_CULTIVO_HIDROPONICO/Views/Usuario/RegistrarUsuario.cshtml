@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "REGISTRAR USUARIO";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/RegistrarUsuario.css">
+    <title>Registrarme</title>
+</head>
+<body>
+    <div class="card">
+        <div class="Cuerpo">
+            <div class="ContenedorFormulario">
+                <div class="TituloForm">
+                    <h1>Crear Cuenta</h1>
+                </div>
+                <form asp-controller="Usuario" asp-action="Registrar" method="post" class="Formulario">
+                    <div class="Componente">
+                        <input class="CampoTexto" type="text" placeholder="Nombre" name="NombreUsuario" id="NombreUsuario" required />
+                        <label for="Correo" class="Etiqueta">Nombre</label>
+                    </div>
+                    <div class="Componente">
+                        <input class="CampoTexto" type="text" placeholder="Apellido" name="ApellidoUsuario" id="ApellidoUsuario" required />
+                        <label for="Correo" class="Etiqueta">Apellido</label>
+                    </div>
+                    <div class="Componente">
+                        <input class="CampoTexto" type="text" placeholder="Teléfono" name="TelefonoUsuario" id="TelefonoUsuario" required />
+                        <label for="Correo" class="Etiqueta">Teléfono</label>
+                    </div>
+                    <div class="Componente">
+                        <input class="CampoTexto" type="email" placeholder="Correo" name="CorreoUsuario" id="CorreoUsuario" required />
+                        <label for="Correo" class="Etiqueta">Correo</label>
+                    </div>
+                    <div class="Componente">
+                        <input class="CampoTexto" type="password" placeholder="Contraseña" name="ContrasenaUsuario" id="ContrasenaUsuario" required />
+                        <label for="Contrasena" class="Etiqueta">Contraseña</label>
+                    </div>
+                    <div class="Componente BtnIS">
+                        <input type="submit" value="Registrarme" class="BtnRegistrar" />
+                    </div>
+                </form>
+                <div class="Componente">
+                    <p>¿Ya tienes cuenta? <a asp-controller="Usuario" asp-action="IniciarSesion">Inicia Sesion</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

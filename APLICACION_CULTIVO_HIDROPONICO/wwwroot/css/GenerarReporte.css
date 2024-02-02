@@ -1,0 +1,68 @@
+﻿:root {
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --fuentePrincipal: 'Righteous', cursive;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.Contenedor {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.Variable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ContenedorReportes {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Reporte, .TituloReporte {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Reporte{
+    border-radius: 1.5rem;
+    border: 5px var(--blanco) solid;
+    margin: 5rem;
+    padding: 2rem;
+}
+
+.Variable {
+    margin: 1rem;
+}
+
+h1{
+    color: var(--blanco);
+    font-size:5rem;
+}
+
+h2 {
+    color: #03e9f4;
+    font-size: 3rem;
+    margin: 1.5rem 0;
+}

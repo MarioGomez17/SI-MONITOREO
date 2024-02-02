@@ -1,0 +1,111 @@
+﻿:root {
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --fuentePrincipal: 'Righteous', cursive;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.Contenido:first-child {
+    align-items: center;
+}
+
+.Contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #A09D44;
+    background: -webkit-linear-gradient(to bottom, #1c92d2, #f2fcfe);
+    background: linear-gradient(to bottom, #1c92d2, #f2fcfe);
+    margin: 0;
+    border-radius: 1.5rem;
+    padding: 0 2rem;
+}
+
+
+
+input, label{
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+h1{
+    font-size: 3rem;
+    color: var(--blanco);
+}
+
+label{
+    color: var(--negro);
+    margin: 0;
+}
+
+input[type=password], input[type=text] {
+    text-indent: 2rem;
+}
+
+input {
+    padding: .8rem;
+    border-radius: 1.5rem;
+    border: none;
+}
+
+input[type=password], #BtnGuardarContrasenaUsuario{
+    width: 30rem;
+}
+
+.Atributo {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.Etiqueta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#CorreoUsuario{
+    width: 45rem;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    width: 20rem;
+    background-color: #00FF04;
+}
+
+.VerUsuarios, .GenerarReporte {
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 1.7rem;
+    margin: .5rem 0;
+    transition: 0.5s;
+}
+
+.VerUsuarios:hover, .GenerarReporte:hover{
+    background-color: #03e9f4;
+    font-size:2.2rem;
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
+
+#EliminarUsuario, .Eliminar {
+    width: 100%;
+}
+#EliminarUsuario {
+    background-color: #FF0000;
+}

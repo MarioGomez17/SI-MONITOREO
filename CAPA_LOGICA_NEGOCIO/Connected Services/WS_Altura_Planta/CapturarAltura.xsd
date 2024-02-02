@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://WebServices/" targetNamespace="http://WebServices/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AlturaValorCliente" type="tns:AlturaValorCliente" />
+  <xs:element name="AlturaValorClienteResponse" type="tns:AlturaValorClienteResponse" />
+  <xs:element name="CapturarAlturaValor" type="tns:CapturarAlturaValor" />
+  <xs:element name="CapturarAlturaValorResponse" type="tns:CapturarAlturaValorResponse" />
+  <xs:complexType name="AlturaValorCliente">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="AlturaValorClienteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CapturarAlturaValor">
+    <xs:sequence>
+      <xs:element name="AlturaInicial" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CapturarAlturaValorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

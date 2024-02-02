@@ -1,0 +1,76 @@
+﻿@model CAPA_ENTIDADES_NEGOCIO.CLASES.TipoPlantaBE_UnidadMedidaPlantaBE_UnidadTiempoPlantaBE
+@{
+    ViewData["Title"] = "AGREGAR PLANTA";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="~/css/AgregarPlanta.css" rel="stylesheet" />
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <div class="Contenedor">
+        <div class="Contenido">
+            <b></b>
+            <form asp-controller="Planta" asp-action="CrearPlanta" class="Formulario">
+                <div class="Componentes">
+                    <h1>Registrar Planta</h1>
+                    <div class="TipoNombre">
+                        <div class="Componente">
+                            <label for="TipoPlanta" class="Etiqueta">Tipo de Planta</label>
+                            <select name="TipoPlanta" id="TipoPlanta">
+                                @foreach (var Tipo in Model.TipoPlantaBE)
+                                {
+                                    <option value="@Tipo.Id_Tipo_Planta">@Tipo.Nombre_Tipo_Planta</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="Componente">
+                            <label for="NombrePlanta" class="Etiqueta">Nombre de la Planta</label>
+                            <input class="CampoTexto" type="text" name="NombrePlanta" id="NombrePlanta" required/>
+                        </div>
+                    </div>
+                    <div class="Componente">
+                        <label for="DiametroTallo" class="Etiqueta">Diametro del Tallo</label>
+                        <div class="ComponenetesJuntos">
+                            <input type="number" name="DiametroTallo" class="Numeros CampoTexto" id="DiametroTallo" required />
+                            <select name="UnidadMeida">
+                                @foreach (var Tipo in Model.UnidadMedidaPlantaBE)
+                                {
+                                    <option value="@Tipo.Id_Unidad_Medida_Planta">@Tipo.Nombre_Unidad_Medida_Planta</option>
+                                }
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <div class="Componente">
+                        <label for="TiempoCultivo" class="Etiqueta">Tiempo de Cultivo</label>
+                        <div class="ComponenetesJuntos">
+                            <input type="number" name="TiempoCultivo" class="Numeros CampoTexto" id="TiempoCultivo" required />
+                            <select name="UnidadTiempo">
+                                @foreach (var Tipo in Model.UnidadTiempoPlantaBE)
+                                {
+                                    <option value="@Tipo.Id_Unidad_Ttimepo_Planta">@Tipo.Nombre_Unidad_Tiempo_Planta</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div class="Componente">
+                        <label for="CantidadHojas" class="Etiqueta">Cantidad de Hojas</label>
+                        <input type="number" name="CantidadHojas" class="Numeros CampoTexto" id="CantidadHojas" required />
+                    </div>
+                    <div class="Botones">
+                        <input type="submit" value="Registrar Planta" class="Boton Registrar" required />
+                        <a class="Boton Cancelar" asp-controller="Planta" asp-action="VerPlantas">Cancelar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="~/js/AgregarPlanta.js"></script>
+</body>
+</html>

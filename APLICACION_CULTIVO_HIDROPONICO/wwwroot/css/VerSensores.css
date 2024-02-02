@@ -1,0 +1,91 @@
+﻿:root {
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --fuentePrincipal: 'Righteous', cursive;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.Contenedor {
+    flex: 1;
+    flex-direction: column;
+    background: #A09D44;
+    background: -webkit-linear-gradient(to bottom, #323709, #A09D44);
+    background: linear-gradient(to bottom, #323709, #A09D44);
+    margin: 0;
+    height: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Carrusel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Objeto {
+    position: absolute;
+    width: 550px;
+    height: 400px;
+    background-color: #F7FF00;
+    padding: 0;
+    transition: 0.3s;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.Botones {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+#SensorPrevio, #SensorPosterior {
+    background-color: transparent;
+    border: none;
+    left: 400px;
+    cursor: pointer;
+    margin: 2rem 5rem;
+}
+
+h2 {
+    color: var(--negro);
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.AgregarSensor {
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+    .AgregarSensor:hover {
+        color: #03e9f4;
+    }
